@@ -4,7 +4,7 @@
    name: nginx
    state: present
 
-- name: Create Config for nginx
+- name: Create сonfig for Nginx
   template:
    src: nginx.j2
    dest: /etc/nginx/nginx.conf
@@ -14,12 +14,3 @@
     name: nginx
     state: started
     enabled: true
-  register: result
-
-- name: Show result
-  debug:
-    msg: "{{ result }}"
-
-
-  
-     
